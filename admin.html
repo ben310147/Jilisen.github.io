@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>平台後台</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+ .sidebar { background:#212529; color:white; padding:15px; height:100vh; }
+ @media(max-width:768px){ .sidebar{ height:auto; } }
+</style>
+</head>
+<body>
+<div class="d-flex flex-column flex-md-row">
+ <div class="sidebar col-md-2">
+ <h6>平台後台</h6><hr>
+ <ul class="nav flex-column">
+ <li class="nav-item"><a class="nav-link text-white">使用者管理</a></li>
+ <li class="nav-item"><a class="nav-link text-white">工廠審核</a></li>
+ <li class="nav-item"><a class="nav-link text-white">訂單管理</a></li>
+ <li class="nav-item"><a class="nav-link text-white">報價設定</a></li>
+ </ul>
+ </div>
+ <div class="col-12 col-md-10 p-3 bg-light">
+ <h5>訂單管理</h5>
+ <div class="table-responsive">
+ <table class="table bg-white table-sm mt-2">
+ <tr><th>訂單號碼</th><th>顧客</th><th>金額</th><th>狀態</th></tr>
+ <tr><td>001</td><td>A公司</td><td>3600</td><td>生產中</td></tr>
+ </table>
+ </div>
+ </div>
+</div>
+</body>
+</html>
